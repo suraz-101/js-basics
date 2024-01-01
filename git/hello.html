@@ -5,8 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 1px solid gray;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(to right, rgb(5, 1, 1), coral);
+      }
+
+      .container .inner-container h1 {
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <h5>Hellow Word</h5>
+    <div class="container">
+      <div class="inner-container">
+        <h1>Hellow World</h1>
+      </div>
+    </div>
   </body>
 </html>
