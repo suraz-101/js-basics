@@ -2,7 +2,7 @@
 
 Learning javascript basics
 
-#learning about git command day 2
+# learning about git command day 2
 
 1. git status (check fijles)
 2. git add .
