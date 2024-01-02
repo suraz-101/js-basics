@@ -33,3 +33,11 @@ persons = "pandey suraj";
 //var and let allow their value to be replaced by another value but const doest not allow it
 
 console.log(person);
+
+/* interactions
+
+ prompt, confirm, alert*/
+
+const name = prompt("What is your name");
+const isValid = confirm("Are you above 18 years?");
+alert("hellow " + name);
