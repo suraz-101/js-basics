@@ -52,4 +52,4 @@ changing string to number and number to string
 
 # Operators
 
-AND , OR
+AND (&), OR (||), Not Equal to (!=)
