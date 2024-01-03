@@ -24,7 +24,7 @@ Learning javascript basics
    - prompt (ask questions)
    - confirm (confirm questions)
 
-# day 4 datatype
+# day 4 datatype, Type Casting, Statements
 
 1. String - Text eg. "suraj"
 2. Number - eg. weight = 65
