@@ -38,6 +38,17 @@ console.log(person);
 
  prompt, confirm, alert*/
 
-const name = prompt("What is your name");
-const isValid = confirm("Are you above 18 years?");
-alert("hellow " + name);
+// const name = prompt("What is your name");
+// const isValid = confirm("Are you above 18 years?");
+// alert("hellow " + name);
+
+//Write a program taht store the use inform about their birth year and calculate age
+
+const birthYear = prompt("Please enter your birth year!!"); //asking birth year from the user using prompt
+const age = 2024 - birthYear;
+alert("Your age is " + age); //printing the age by calculating
+
+//Type casting => conversion of data type froj one data to another
+
+//String to Number : Number (value)
+//Number to String : String(value)
