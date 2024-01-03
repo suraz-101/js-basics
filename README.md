@@ -24,7 +24,9 @@ Learning javascript basics
    - prompt (ask questions)
    - confirm (confirm questions)
 
-# day 4 datatype, Type Casting, Statements
+# day 4 datatype, Type Casting, Statements and Operators
+
+# Datatypes
 
 1. String - Text eg. "suraj"
 2. Number - eg. weight = 65
@@ -34,3 +36,20 @@ Learning javascript basics
 6. null -
 7. symbol - to create unique we use symbol
 8. Object - const person = {fullName = "Suraj Pandey", age = "23"};
+
+# Type Casting
+
+changing string to number and number to string
+
+# Statements
+
+1. if...else
+2. switch(conditions)
+   {
+   case value: message;break;
+   default : message
+   }
+
+# Operators
+
+AND , OR

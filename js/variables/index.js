@@ -94,30 +94,47 @@ switch (expression) {
 //   Monday - Friday => print weekday
 //   Saturday - SUNDAY => print weenend
 
+// const day = Number(prompt("Please enter a day of the week"));
+// switch (day) {
+//   case 1:
+//     alert("weekend");
+//     break;
+//   case 7:
+//     alert("weekend");
+//     break;
+//   case 2:
+//     alert("weekday");
+//     break;
+//   case 3:
+//     alert("weekday");
+//     break;
+//   case 4:
+//     alert("weekday");
+//     break;
+//   case 5:
+//     alert("weekday");
+//     break;
+//   case 6:
+//     alert("weekday");
+//     break;
+//   default:
+//     alert("Invalid day, only enter 1-7 numbers");
+//   //  break;
+// }
+
+//operators
+
+//Wrtie a program that prints the if its weekday or weekend based on day input using switch case
+
+//   Monday - Friday => print weekday
+//   Saturday - SUNDAY => print weenend
+
 const day = Number(prompt("Please enter a day of the week"));
-switch (day) {
-  case 1:
-    alert("weekend");
-    break;
-  case 7:
-    alert("weekend");
-    break;
-  case 2:
-    alert("weekday");
-    break;
-  case 3:
-    alert("weekday");
-    break;
-  case 4:
-    alert("weekday");
-    break;
-  case 5:
-    alert("weekday");
-    break;
-  case 6:
-    alert("weekday");
-    break;
-  default:
-    alert("Invalid day, only enter 1-7 numbers");
-  //  break;
+
+if ((day >= 2) & (day <= 6)) {
+  alert("weekday");
+} else if (day == 1 || day == 7) {
+  alert("weekend");
+} else {
+  alert("Invalid number, please enter numbers from 1 to 7, Thank you!!");
 }
