@@ -53,3 +53,32 @@ changing string to number and number to string
 # Operators
 
 AND (&), OR (||), Not Equal to (!=)
+
+# Day 5 - Loops and Functions
+
+# For Lopp
+
+- syntax :
+
+for(initial;condition;step){}
+
+#while
+
+- syntax:
+
+while(condition){}
+
+# do ... while
+
+- syntax:
+  do{
+
+}whilte(condition)
+
+# Function
+
+# ES5 - syntax
+
+function functionName(){}
+
+eg. function sayHi(){}
