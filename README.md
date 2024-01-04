@@ -81,9 +81,10 @@ while(condition){}
 
 - function declaration
 
-  function functionName(){}
-  eg. function sayHi(){return value}
+  function functionName(parameters){return Value}
+  eg. function fullName(fName,lName){return fName+ " " +lName};
 
 - function call
 
   functionName(parameters);
+  eg. function fullName("Suraj","Pandey");
