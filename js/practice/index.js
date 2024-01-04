@@ -69,12 +69,3 @@ console.log("The third word of the sentence is: " + separate[2]);
 console.log("-------------------------slice()-------------------------");
 let sliceSentence = sent.slice(0, 6);
 console.log(sliceSentence);
-
-const w = sent.split(" "); // I , love, Nepal, Nepal, is, very, beautiful
-console.log(w);
-for (let i = 0; i <= 10; i++) {
-  //   console.log(w[i]);
-  if (w[i] == "Nepal") {
-    console.log(w[i]);
-  }
-}
