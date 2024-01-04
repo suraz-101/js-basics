@@ -79,6 +79,11 @@ while(condition){}
 
 # ES5 - syntax
 
-function functionName(){}
+- function declaration
 
-eg. function sayHi(){}
+  function functionName(){}
+  eg. function sayHi(){return value}
+
+- function call
+
+  functionName(parameters);

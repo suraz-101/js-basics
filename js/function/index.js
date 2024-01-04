@@ -38,21 +38,31 @@ console.log("Hello from function chapter");
 
 //Write a function to find the area of square
 
-function areOfTheSquare(length, breadth) {
-  const area = length * breadth;
-  console.log(area);
-}
+// function areOfTheSquare(length, breadth) {
+//   const area = length * breadth;
+//   console.log(area);
+// }
 
-areOfTheSquare(5, 5);
+// areOfTheSquare(5, 5);
 //Write a function to get the full name of the person using parameter first name and last name
 
-function fullName(firstName, lastName) {
-  const fName = firstName + " " + lastName;
-  return fName;
-}
-const first = prompt("Enter your first name");
-const second = prompt("Enter your last name");
-const result = fullName(first, second);
-console.log(result);
+//function
+// function fullName(firstName, lastName) {
+//   const fName = `${firstName}` + " " + `${lastName}`;
+//   return fName; //returning value
+//using inbuilt function
+//   const res = firstName.concat("", lastName);
+//   return res;
+// }
+//taking input using prompt
+// const first = prompt("Enter your first name");
+// const second = prompt("Enter your last name");
+
+//function call
+// const result = fullName(first, second); //passing cvalue to the function
+// console.log(result); //printing results
+
+//concat, includes, charAt, indexOf, replace,
+//replaceAll, toUpperCase, substring, split, slice
 
 //ES6
