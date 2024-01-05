@@ -2,14 +2,14 @@
 
 Learning javascript basics
 
-# learning about git command day 2
+# Day 2 - learning about git command
 
-1. git status (check fijles)
+1. git status (check files)
 2. git add .
 3. git commit -m "hellow world"
 4. git push origin main
 
-# day 3 learning about the javascript variables , hoisting and interaction (prompt, alert and confirm)
+# Day 3 - learning about the javascript variables , hoisting and interaction (prompt, alert and confirm)
 
 1. variables
 
@@ -24,9 +24,9 @@ Learning javascript basics
    - prompt (ask questions)
    - confirm (confirm questions)
 
-# day 4 datatype, Type Casting, Statements and Operators
+# Day 4 - datatype, Type Casting, Statements and Operators
 
-# Datatypes
+# 1. Datatypes
 
 1. String - Text eg. "suraj"
 2. Number - eg. weight = 65
@@ -37,11 +37,11 @@ Learning javascript basics
 7. symbol - to create unique we use symbol
 8. Object - const person = {fullName = "Suraj Pandey", age = "23"};
 
-# Type Casting
+# 2. Type Casting
 
 changing string to number and number to string
 
-# Statements
+# 3. Statements
 
 1. if...else
 2. switch(conditions)
@@ -50,13 +50,13 @@ changing string to number and number to string
    default : message
    }
 
-# Operators
+# 4. Operators
 
 AND (&), OR (||), Not Equal to (!=)
 
 # Day 5 - Loops and Functions
 
-# For Lopp
+# 1. For Lopp
 
 - syntax :
 
@@ -68,16 +68,16 @@ for(initial;condition;step){}
 
 while(condition){}
 
-# do ... while
+# 2. do ... while
 
 - syntax:
   do{
 
 }whilte(condition)
 
-# Function
+# 3. Function
 
-# ES5 - syntax
+# 4. ES5 - syntax
 
 - function declaration
 
