@@ -86,75 +86,83 @@ console.log(res);
 
 // Inline Function => similar to anonymous function
 
-// const Hellow2 = funtion();
-// {
-//   console.log("Hellow2");
-// }
+const hellowTwo = function (word) {
+  return word;
+};
+
+console.log(hellowTwo("Hellow2"));
 
 // // default function
 
-// const pagination = (page = 1, limit = 20) => {
-//   console.log(page, limit);
-// };
+const pagination = (page = 1, limit = 20) => {
+  console.log(page, limit);
+};
 
-// pagination(undefined, 100);
+pagination(20, 100);
 
 // //parameterised function
-// const fun = (a, b, c) => {
-//   return a + b + c;
-// };
+const fun = (a, b, c) => {
+  return a + b + c;
+};
 
-// console.log(fun(1, 2, 3));
+console.log(fun(1, 2, 3));
 
 // //Implicit Function
 
-// const sums = (a, b) => a + b;
-// console.log(sums(1, 2));
+const sums = (a, b) => a + b;
+console.log(sums(1, 2));
 
 // //Explicit Function => every time
-// const f = (a, b, c) => {
-//   if (a > b) return a - b;
-//   return b - a;
-// };
+const f = (a, b) => {
+  if (a > b) return a - b;
+  return b - a;
+};
+
+console.log(f(5, 10));
 
 // //IIFEs => Immediately Invoked Function Expressions
 
-// (function () {
-//   console.log("Hellow from devOps");
-// })();
+(function () {
+  console.log("Hellow from devOps");
+})();
 
 // //closures
 
-// const getEnv = () => {
-//   const password = "password";
-//   return password;
-// };
+const getEnv = () => {
+  const password = "supasswordraj";
+  return password;
+};
 
-// console.log(getEnv());
+console.log(getEnv());
 
 // const password = "password";
 
 //write a default function to print "welcome guest" if usename is not your name
 const check = (name, role = "admin") => {
-  if (name === "suraj") return `${role}`;
-  return "guest";
+  if (name === "suraj") return " Welcome " + `${role}` + " " + `${name}`;
+  return " Welcome " + " Guest " + `${name}`;
 };
 
-console.log(check("suraj"));
+console.log(check("surajj"));
 
-//write a default function to create the multiplication table of 5
+// //write a default function to create the multiplication table of 5
+console.log("----------------------------------------------");
+console.log("|---------    Multiplication Table    -----------|");
+console.log("----------------------------------------------");
 
 const multiple = (number = 5) => {
   for (let i = 1; i <= 10; i++) {
     let res = number + "X" + i + "=" + number * i;
-    return res;
+    console.log(res);
   }
 };
 
-console.log(multiple());
+multiple();
 
-//write a function to calculate final amount based on the principal amount
-
+// //write a function to calculate final amount based on the principal amount
+console.log("----------------------------------------------");
+console.log("|----------------    Interest     ----------------|");
+console.log("----------------------------------------------");
 const principal = (p, t, r) => {
   const result = (p * t * r) / 100;
   return result;
@@ -162,15 +170,35 @@ const principal = (p, t, r) => {
 
 console.log(principal(10000, 1, 20));
 
-//write a function to calculate compound interest using Math Function
-//p = 100000 (principal)
-// r= 10% (rate)
-//t = 10 length of time
+// //write a function to calculate compound interest using Math Function
+// //p = 100000 (principal)
+// // r= 10% (rate)
+// //t = 10 length of time
 
-// Formula A = p(1+r) por t
-
+// // Formula A = p(1+r) por t
+console.log("----------------------------------------------");
+console.log("|---------    Compound Interest    -----------|");
+console.log("----------------------------------------------");
 const compound = (p, t, r) => {
+  console.log(
+    "calculate compound interest using Math Function of Principal: " + `${p}`
+  );
+  console.log("of time: " + `${t}`);
+  console.log("of rate: " + `${r}`);
   return Math.round(p * Math.pow(1 + r / 100, t));
 };
 
-console.log(compound(100000, 10, 10));
+console.log("==> " + compound(100000, 10, 10));
+
+const logIn = (username, password, role = "guest") => {
+  if ((username == "suraj") & (password == "suraj123")) return (role = "admin");
+  return role;
+};
+
+const resp = logIn("suraj", "suraj1");
+// console.log(resp);
+if (resp == "guest") {
+  console.log("Wecome to user panel");
+} else {
+  console.log("Welcome to admin Panel");
+}
