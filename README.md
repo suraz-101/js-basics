@@ -73,7 +73,7 @@ while(condition){}
 - syntax:
   do{
 
-}whilte(condition)
+  }while(condition)
 
 # 3. Function
 
@@ -88,3 +88,23 @@ while(condition){}
 
   functionName(parameters);
   eg. function fullName("Suraj","Pandey");
+
+  # Day 5 - ES6 (Arrow function
+
+  - Syntax : const functionName = () =>{}
+  - Hoisting is case sensitive in ES6
+    Eg.:
+    we cannot call function before the function is declared.
+
+    # types of functions
+
+    - anonymous Function / nameless function
+    - inline Function
+    - default Function => used in daily life
+    - parameterised Function => used in daily life
+    - implicit Function => used in cleanup daily life
+    - explicit Function => used in every time
+    - IIFEs => used in devOps Daily Life
+    - closures => daily life
+    - callback Function => framework inbuild
+    - pure Function
