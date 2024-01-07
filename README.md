@@ -50,15 +50,15 @@ changing string to number and number to string
    default : message
    }
 
+   # ternary Operator
+
+   - syntax: vairable = condition >? true statement : false statement
+
+   - Eg: const result = age > 18 ? alert("You are adult") : alert("You are child");
+
 # 4. Operators
 
 AND (&), OR (||), Not Equal to (!=)
-
-- ternary Operator
-
-- syntax: vairable = condition >? true statement : false statement
-
-- Eg: const result = age > 18 ? alert("You are adult") : alert("You are child");
 
 # Day 5 - Loops and Functions
 
