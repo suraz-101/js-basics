@@ -54,6 +54,12 @@ changing string to number and number to string
 
 AND (&), OR (||), Not Equal to (!=)
 
+- ternary Operator
+
+- syntax: vairable = condition >? true statement : false statement
+
+- Eg: const result = age > 18 ? alert("You are adult") : alert("You are child");
+
 # Day 5 - Loops and Functions
 
 # 1. For Lopp
@@ -108,3 +114,5 @@ while(condition){}
     - closures => daily life
     - callback Function => framework inbuild
     - pure Function
+
+# Day 6 -

@@ -190,15 +190,3 @@ const compound = (p, t, r) => {
 
 console.log("==> " + compound(100000, 10, 10));
 
-const logIn = (username, password, role = "guest") => {
-  if ((username == "suraj") & (password == "suraj123")) return (role = "admin");
-  return role;
-};
-
-const resp = logIn("suraj", "suraj1");
-// console.log(resp);
-if (resp == "guest") {
-  console.log("Wecome to user panel");
-} else {
-  console.log("Welcome to admin Panel");
-}
