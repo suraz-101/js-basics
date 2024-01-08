@@ -42,7 +42,7 @@ console.log(
 // console.log(re); //printing the result
 
 // //replaceAll => replace all the word by the another word as specified from the entier phrase or the string replaceAll(word to be replaced, replace word)
-// // let sent = "I love Nepal. Nepal is very beautiful.";
+let sent = "I love Nepal. Nepal is very beautiful.";
 // console.log("-------------------------replaceAll()-------------------------");
 // let replaceALL = sent.replaceAll("Nepal", "Pokhara");
 // console.log(replaceALL);
@@ -67,8 +67,8 @@ console.log(
 
 // //slice => slice() method in javascript exptract the part of the string which is similar to substring
 // console.log("-------------------------slice()-------------------------");
-// let sliceSentence = sent.slice(0, 6);
-// console.log(sliceSentence);
+// let sliceSentence = sent.slice(3, 6);
+// console.log("Slice is " + sliceSentence);
 
 //write a function that converts word to uppercase words
 
