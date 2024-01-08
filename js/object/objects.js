@@ -47,5 +47,3 @@
 // Sample Output : Today is : Tuesday.
 // Current time is : 10 PM : 30 : 38
 
-let Time = Time;
-console.log("current time is " + Time);
