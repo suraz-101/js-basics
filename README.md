@@ -115,4 +115,4 @@ while(condition){}
 - callback Function => framework inbuild
 - pure Function
 
-# Day 6 - Recap all,
+# Day 6 - Recap all
