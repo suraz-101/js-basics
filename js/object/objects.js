@@ -47,3 +47,32 @@
 // Sample Output : Today is : Tuesday.
 // Current time is : 10 PM : 30 : 38
 
+console.log("-----------WELCOME TO OBJECT PRACTICE--------------------");
+
+//Object => complex datatype
+const person = {
+  firstName: "suraj",
+  lastName: "Pandey",
+  dob: "2000",
+  isMale: true,
+  fullName: function () {
+    return "My full name is " + this.firstName + " " + this.lastName;
+  },
+  age: () => {
+    // return this;
+    return 2024 - person.dob;
+  },
+};
+
+console.log(person.age());
+//Read
+console.log(person.dob);
+console.log(person.fullName());
+
+// update
+// person.age = 22;
+// console.log(person.age);
+
+//Delete
+// delete person.age;
+// console.log(person);

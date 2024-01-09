@@ -116,3 +116,26 @@ while(condition){}
 - pure Function
 
 # Day 6 - Recap all
+
+# Day 7 - Objects and methods and Array
+
+# Day 7 - Objects and methods and Array
+
+# Object (Real Life Object, Properties and ) => Complex Data type
+
+- Syntax to create Object
+
+- Eg: const person = {
+  firstName : "suraj",
+  lastName : "Pandey",
+  dob : "2000-07-15,
+  isMale: true,
+  fullName : () =>{return person.firstName + " " + person.lastName},
+  age : function(){
+  2024 - this.dob;
+  },
+  };
+
+- console.log(person.age);
+
+-Note : In above object we have two types of function that is regular function and arrow function. In arrow function we cannot use this keyword because arrow function does not contain its own this as it remain inside the object while regular function indicates this to the name of the object.
