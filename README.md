@@ -138,4 +138,4 @@ while(condition){}
 
 - console.log(person.age);
 
--Note : In above object we have two types of function that is regular function and arrow function. In arrow function we cannot use this keyword because arrow function does not contain its own this as it remain inside the object while regular function indicates this to the name of the object.
+-<span style="color: red"> Note : In above object we have two types of function that is regular function and arrow function. In arrow function we cannot use this keyword because arrow function does not contain its own this as it remain inside the object while regular function indicates this to the name of the object.</span>
