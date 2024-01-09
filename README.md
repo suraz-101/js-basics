@@ -13,7 +13,7 @@ Learning javascript basics
 
 1. variables
 
-   - var (ES5)
+   - var (ECMA Script 5)
    - let
    - const
 
@@ -138,4 +138,20 @@ while(condition){}
 
 - console.log(person.age);
 
--<span style="color: red"> Note : In above object we have two types of function that is regular function and arrow function. In arrow function we cannot use this keyword because arrow function does not contain its own this as it remain inside the object while regular function indicates this to the name of the object.</span>
+- Spread Operator => most important (Exclude)
+
+const { isMale, ...rest } = person;
+console.log({ rest });
+
+we can use spread operator if we did not want to show the specific value as we dont want to show isMale in above case but in real world if we don't want to show the password in the front end from the database then we can use spread operator as above.
+
+- Note : In above object we have two types of function that is regular function and arrow function. In arrow function we cannot use this keyword because arrow function does not contain its own this as it remain inside the object while regular function indicates this to the name of the object.
+
+# Array => collections of types of objects or data
+
+- syntax : const array = [item1, item2,....]
+- Use of Spread operator
+
+  - Syntax : const [a,....remaining] = array;
+    console.log(a) => output ==> item1
+    console.log(remaining) => output ==> item2, .......

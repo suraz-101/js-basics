@@ -76,3 +76,8 @@ console.log(person.fullName());
 //Delete
 // delete person.age;
 // console.log(person);
+
+//Spread Operator
+
+const { isMale, ...rest } = person;
+console.log({ rest });
