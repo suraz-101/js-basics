@@ -12,7 +12,10 @@ console.log("------You are welcome to array ops ---------");
 
 const numbers = [22, 1, 33, 9, 55];
 // console.log(numbers.sort((a, b) => a.numbers - b.numbers));
-
+// numbers.reduce((a,b)=>
+// {
+//    const temp = a>b;
+// })
 //write a program to exclude password from the array
 
 const users = [
