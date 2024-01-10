@@ -155,3 +155,5 @@ we can use spread operator if we did not want to show the specific value as we d
   - Syntax : const [a,....remaining] = array;
     console.log(a) => output ==> item1
     console.log(remaining) => output ==> item2, .......
+
+# Day - 9 : shorting
