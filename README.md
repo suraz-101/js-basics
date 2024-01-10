@@ -156,4 +156,41 @@ we can use spread operator if we did not want to show the specific value as we d
     console.log(a) => output ==> item1
     console.log(remaining) => output ==> item2, .......
 
-# Day - 9 : shorting
+# Day - 9 : higher order functions and callBack functions
+
+- Some of the higher order functions are:
+
+  - map()
+
+    - The map function is used if we need to transform existing array into completely new array. For instance, if we need to double/ dviide each elements by 2 of an array then we can use map function.
+
+      - Syntax :
+
+                const array = [item1, item2, item3,....];
+
+                const callBackFunction = (item) =>{
+                  return logic;
+
+                }
+
+                array.map(callBackFunction);
+
+    - Note: map function process iteration without loop like for()
+
+  - filter()
+
+    - The filter function is mainly used if we need to filter the values from the array as its name suggest. This method evaluates the return value of the callback function as a boolen. If the return value is true than the item is kept. If the return value is false the array item is removed.
+
+      - Syntax :
+
+                const array = [item1, item2, item3,........];
+
+               const  callBackFunction = (individual item) =>
+                {
+                    return true or false according to the logic;
+                }
+                array.filter(callBackFunction);
+
+    - Note: filter function is also an iterative method. It calls a provided callback function once for each element in an array, and construct a new array of all the values for which callback function retruns a true value.
+
+  - reduce()
