@@ -44,7 +44,17 @@ const users = [
 //[1,2,3,4,5,6,7,8,9,10] => 55
 
 const addition = (arrayNumbers) => {
-  return arrayNumbers.reduce((sum, currentValue) => sum + currentValue, 0);
+  arrayNumbers.reduce((a, number) => console.log(number));
 };
 const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(addition(arrayNumbers));
+
+const asrra = [5, 2, 8, 1, 9];
+
+// Sorting as strings (default behavior)
+const sortedArrayStrings = asrra.sort();
+console.log("Sorted as strings:", sortedArrayStrings);
+
+// Sorting numerically using a comparison function
+const sortedArrayNumbers = asrra.sort((a, b) => a - b);
+console.log("Sorted numerically:", sortedArrayNumbers);
