@@ -194,3 +194,40 @@ we can use spread operator if we did not want to show the specific value as we d
     - Note: filter function is also an iterative method. It calls a provided callback function once for each element in an array, and construct a new array of all the values for which callback function retruns a true value.
 
   - reduce()
+
+    - The reduce mthod is maily used if we need to calculate a single value from an array. For instance, if we need to add or mutliply all the elements from an array then we can use reduce function. It is also an iterative method.
+
+      - Syntax:
+
+                 const array = [item1, item2, item3,........];
+
+            without using reduce function
+
+                 function sum(array)
+                 {
+                   let sum = 0;
+                   for(let i = 0; i<=array.length; i++>)
+                   {
+                     sum+ = array[i];
+
+                   }
+                   return sum;
+                 }
+
+                console.log(sum(array));
+
+
+            By useing reduce function
+
+              - Note : Reduce function iterate over all the elements of the array and store the each value in current value in every iteration and accumulator as its name suggest accumulate or stores result.
+
+                    array.reduce(function callBackFunction(accumulator, crrentValue){ accumulator = accumulator + currentVlaue;
+                    return accumulator
+                    },, initial value);
+
+              if we look on both the example and compare them, accumulator in reduce function is acting like sum in first example and current value is acking like array[i] and the initial value is the value we put during the initialising the valraible like we have initialised value of sum as 0. If we look over both the examples, both are doing exactly the same work but example two seems to be more concise or in other word brief and to the point which enhance the readability and simplify the overall implementation.
+
+
+              Write a program using and without using reduce function to find the maximum value of an array.
+
+              ![/js/array/array-ops.js]

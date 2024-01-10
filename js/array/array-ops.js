@@ -10,19 +10,19 @@ console.log("------You are welcome to array ops ---------");
 
 // Write a program to find the maximum and minimum value of an array
 
-const numbers = [22, 1, 33, 9, 55];
-// console.log(numbers.sort((a, b) => a.numbers - b.numbers));
-// numbers.reduce((a,b)=>
-// {
-//    const temp = a>b;
-// })
-//write a program to exclude password from the array
+// const numbers = [22, 1, 33, 9, 55];
+// // console.log(numbers.sort((a, b) => a.numbers - b.numbers));
+// // numbers.reduce((a,b)=>
+// // {
+// //    const temp = a>b;
+// // })
+// //write a program to exclude password from the array
 
-const users = [
-  { user: "a", pw: "test" },
-  { user: "b", pw: "test1" },
-  { user: "c", pw: "test2" },
-];
+// const users = [
+//   { user: "a", pw: "test" },
+//   { user: "b", pw: "test1" },
+//   { user: "c", pw: "test2" },
+// ];
 // for (let i = 0; i <= users.length; i++) {
 //   const single = users[i];
 
@@ -43,18 +43,48 @@ const users = [
 //write a function that accepts an array and returns the sum of all the items of array
 //[1,2,3,4,5,6,7,8,9,10] => 55
 
-const addition = (arrayNumbers) => {
-  arrayNumbers.reduce((a, number) => console.log(number));
+// const addition = (arrayNumbers) => {
+//   arrayNumbers.reduce((a, number) => console.log(number));
+// };
+// const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(addition(arrayNumbers));
+
+// const asrra = [5, 2, 8, 1, 9];
+
+// // Sorting as strings (default behavior)
+// const sortedArrayStrings = asrra.sort();
+// console.log("Sorted as strings:", sortedArrayStrings);
+
+// // Sorting numerically using a comparison function
+// const sortedArrayNumbers = asrra.sort((a, b) => a - b);
+// console.log("Sorted numerically:", sortedArrayNumbers);
+
+// Write a program to print the maximum value from an array with and without using reduce method.
+
+// without using reduce function
+
+const array = [2, 4, 23, 59, 10];
+
+const maximumValue = (array) => {
+  let max = 0;
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+    }
+  }
+  return max;
 };
-const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(addition(arrayNumbers));
 
-const asrra = [5, 2, 8, 1, 9];
+const response = maximumValue(array);
 
-// Sorting as strings (default behavior)
-const sortedArrayStrings = asrra.sort();
-console.log("Sorted as strings:", sortedArrayStrings);
+console.log("The maximum value is : ", `${response}`);
 
-// Sorting numerically using a comparison function
-const sortedArrayNumbers = asrra.sort((a, b) => a - b);
-console.log("Sorted numerically:", sortedArrayNumbers);
+// By using reduce function
+
+const max = array.reduce((accumulator, currentvalue) => {
+  if (currentvalue > accumulator) {
+    accumulator = currentvalue;
+  }
+  return accumulator;
+}, 0);
+console.log("The maximum value from an array is : ", `${max}`);
