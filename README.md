@@ -175,6 +175,16 @@ we can use spread operator if we did not want to show the specific value as we d
 
                 array.map(callBackFunction);
 
+        - Example :
+
+              const array1 = [2, 4, 6, 8];
+
+              const res = array1.map((individualElement) => {
+                return individualElement * 2;
+              });
+
+              console.log(res);
+
     - Note: map function process iteration without loop like for()
 
   - filter()
@@ -185,11 +195,21 @@ we can use spread operator if we did not want to show the specific value as we d
 
                 const array = [item1, item2, item3,........];
 
-               const  callBackFunction = (individual item) =>
-                {
-                    return true or false according to the logic;
-                }
-                array.filter(callBackFunction);
+                const  callBackFunction = (individual item) =>
+                  {
+                      return true or false according to the logic;
+                  }
+                  array.filter(callBackFunction);
+
+        - Example :
+
+                const array = [2,4,3,9];
+
+                const res = array.filter((individualElement)=>{ return individualElement > 3;
+
+                })
+
+                 console.log(res);
 
     - Note: filter function is also an iterative method. It calls a provided callback function once for each element in an array, and construct a new array of all the values for which callback function retruns a true value.
 
@@ -227,6 +247,6 @@ we can use spread operator if we did not want to show the specific value as we d
 
     - if we look on both the example and compare them, accumulator in reduce function is acting like sum in first example and current value is acking like array[i] and the initial value is the value we put during the initialising the valraible like we have initialised value of sum as 0. If we look over both the examples, both are doing exactly the same work but example two seems to be more concise or in other word brief and to the point which enhance the readability and simplify the overall implementation.
 
-    Write a program using and without using reduce function to find the maximum value of an array.
+    Write a program with and without using reduce function to find the maximum value of an array.
 
     - Note => (visit js/array/array-ops.js file)

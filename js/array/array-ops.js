@@ -88,3 +88,26 @@ const max = array.reduce((accumulator, currentvalue) => {
   return accumulator;
 }, 0);
 console.log("The maximum value from an array is : ", `${max}`);
+
+const array1 = [2, 4, 6, 8];
+
+const res = array1.map((individualElement) => {
+  return individualElement * 2;
+});
+
+console.log(res);
+
+// Write a function in javascript that can filter numbers greater than 3 from the given array
+const array3 = [2, 4, 3, 9];
+
+const res1 = array3.filter((individualElement) => {
+  return individualElement > 3;
+});
+
+console.log("The array with numbers greater than 3 are :" + res1);
+
+const sum = array3.reduce((acc, current) => {
+  return (acc = acc + current);
+}, 0);
+
+console.log("The sum of the each numbers of array is : " + sum);
