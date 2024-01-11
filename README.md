@@ -250,3 +250,12 @@ we can use spread operator if we did not want to show the specific value as we d
     Write a program with and without using reduce function to find the maximum value of an array.
 
     - Note => (visit js/array/array-ops.js file)
+
+# Day - 10 : HTML, CSS and Javascript Combination
+
+- Basic of HTML, CSS and Javascript
+
+  - learning about the html formate
+  - learnig about the css styling
+  - learnig about form
+  - learnig about the form submit using javascript

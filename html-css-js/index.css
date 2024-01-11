@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.heading {
+  background-color: coral;
+  text-align: center;
+  color: white;
+  padding: 10px 10px;
+  /* border: 1px solid white; */
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-family: sans-serif;
+  border: 1px solid white;
+  padding: 10px 10px;
+}
+
+.empty {
+  /* border: 1px solid black; */
+  height: 400px;
+  width: 300px;
+  background-color: transparent;
+  border: 0.5px solid black;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.empty::before {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(211, 44, 6),
+    rgba(255, 0, 0, 0)
+  );
+
+  /* background-color: coral; */
+  height: 150%;
+  width: 50%;
+  position: absolute;
+  top: -50px;
+  left: 25%;
+  /* z-index: 2; */
+  border: 1px solid black;
+  animation: spin 3s linear infinite;
+
+  /* left: 100px; */
+  /* overflow: hidden; */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.empty::after {
+  content: "";
+  background-color: gray;
+  height: 390px;
+  width: 290px;
+  position: absolute;
+  border-radius: 10px;
+  /* padding: 10px; */
+
+  /* top: 0;
+  right: 0; */
+}
