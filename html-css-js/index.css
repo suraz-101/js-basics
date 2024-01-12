@@ -4,6 +4,9 @@
   box-sizing: border-box;
   margin: auto;
 }
+body {
+  background-color: black;
+}
 
 .heading {
   background-color: coral;
@@ -68,7 +71,7 @@
 
 .empty::after {
   content: "";
-  background-color: gray;
+  background-color: black;
   height: 390px;
   width: 290px;
   position: absolute;
@@ -77,4 +80,8 @@
 
   /* top: 0;
   right: 0; */
+}
+
+label {
+  color: white;
 }

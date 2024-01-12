@@ -259,3 +259,7 @@ we can use spread operator if we did not want to show the specific value as we d
   - learnig about the css styling
   - learnig about form
   - learnig about the form submit using javascript
+
+# Day - 11 : HTML, CSS and Javascript part 2
+
+- learning to print the value of selected check box and selected options from select tag in html using javascript
