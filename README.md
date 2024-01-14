@@ -263,3 +263,13 @@ we can use spread operator if we did not want to show the specific value as we d
 # Day - 11 : HTML, CSS and Javascript part 2
 
 - learning to print the value of selected check box and selected options from select tag in html using javascript
+
+# Day - 12 : Date and HTMl completions
+
+- Recap couple of concepts (array, array method chaining, spread Ops, function)
+
+  - Write a js function to convert the string into the properCase (Eg: 'the fox is sly' => "The Fox Is Sly")
+
+  - Date and Date properties and Manipulation
+
+  - HTML, CSS scratch CSS design (alternative => bootstrap)
