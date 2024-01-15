@@ -277,4 +277,5 @@ we can use spread operator if we did not want to show the specific value as we d
 # Day - 13 : Advance HTML, CSS and Javascript
 
 1. Advance JS and CSS Manipulation (Bootstrap)
-2.
+2. Layouts
+3. Components (Form, buttons, Navbar,)
