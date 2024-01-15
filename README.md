@@ -264,7 +264,7 @@ we can use spread operator if we did not want to show the specific value as we d
 
 - learning to print the value of selected check box and selected options from select tag in html using javascript
 
-# Day - 12 : Date and HTMl completions
+# Day - 12 : Date and HTMl
 
 - Recap couple of concepts (array, array method chaining, spread Ops, function)
 
@@ -273,3 +273,8 @@ we can use spread operator if we did not want to show the specific value as we d
   - Date and Date properties and Manipulation
 
   - HTML, CSS scratch CSS design (alternative => bootstrap)
+
+# Day - 13 : Advance HTML, CSS and Javascript
+
+1. Advance JS and CSS Manipulation (Bootstrap)
+2.
