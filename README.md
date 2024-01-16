@@ -281,3 +281,14 @@ we can use spread operator if we did not want to show the specific value as we d
 - Components (Form, buttons, Navbar,)
 
 # Day - 14 : HTML, JS and Bootstrap (Nodejs)
+
+- Learned about setInterval and setTimeout
+
+  - Syntax:
+    setInterval(calBackFunction, setTimeOut);
+
+    Note: calBackFunction is callled every time after the interval set at setTimeOut is achived.
+
+- Introduction of NodeJs
+
+  - How nodejs was built.
