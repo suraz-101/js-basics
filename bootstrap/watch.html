@@ -18,36 +18,34 @@
     />
   </head>
   <body>
-    <div class="outerDiv m-auto mt-4">
-      <div class="innerDiv">
-        <div class="firstDiv container border row m-auto" style="height: 65%">
-          <div
-            class="col-1 amPm d-flex justify-content-start align-items-start"
-            id="amPm"
-          >
-            PM
+    <div class="wrapper">
+      <div class="title">
+        <h1 class="text-white text-center mt-4">Digital Clock</h1>
+      </div>
+      <div class="outerDiv m-auto mt-4">
+        <div class="innerDiv shadow text-white">
+          <div class="firstDiv container row m-auto" style="height: 65%">
+            <div
+              class="col-1 amPm d-flex justify-content-start align-items-start pt-2"
+              id="amPm"
+            ></div>
+            <div
+              class="col-10 hourMinutes d-flex justify-content-center align-items-center"
+              id="Time"
+            ></div>
+            <div
+              class="col-1 seocnds d-flex justify-content-end align-items-end"
+              id="second"
+            ></div>
           </div>
-          <div
-            class="col-10 hourMinutes d-flex justify-content-center align-items-center"
-            id="Time"
-          >
-            10:08
+          <div class="secondDiv container row m-auto" style="height: 35%">
+            <div class="col date" id="month"></div>
+            <div class="col date" id="day"></div>
+            <div class="col date" id="date"></div>
           </div>
-          <div
-            class="col-1 seocnds d-flex justify-content-end align-items-end"
-            id="second"
-          >
-            12
-          </div>
-        </div>
-        <div class="secondDiv container row m-auto" style="height: 35%">
-          <div class="col date" id="month"></div>
-          <div class="col date" id="day">Day</div>
-          <div class="col date" id="date">year</div>
         </div>
       </div>
     </div>
-
     <script src="./index.js"></script>
   </body>
 </html>

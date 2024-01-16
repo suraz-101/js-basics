@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: black;
 }
 
 /* body {
@@ -44,26 +45,65 @@ h1 {
 .outerDiv {
   height: 220px;
   width: 420px;
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightblue;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 50px 15px #48abe0;
 
   /* margin: auto; */
+}
+
+.outerDiv::before {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    blue,
+    rgba(255, 0, 0, 0)
+  );
+  height: 600px;
+  width: 200px;
+  position: absolute;
+  top: -200px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.outerDiv::after {
+  content: "";
+  background-color: black;
+  height: 95%;
+  width: 98%;
+  position: absolute;
+
+  /* border: 1px solid black; */
 }
 
 .innerDiv {
   height: 180px;
   width: 380px;
   /* border: 1px solid black; */
-  background-color: white;
+  /* background-color: black; */
+  z-index: 3;
 }
 
 .hourMinutes {
-  font-family: serif;
-  font-size: 90px;
+  font-family: digital-clock-font;
+  font-size: 100px;
   font-weight: bolder;
+  color: lightblue;
+
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -72,11 +112,14 @@ h1 {
 .amPm {
   font-size: 20px;
   font-weight: bolder;
+  color: coral;
+  z-index: 3;
 }
 
 .seocnds {
   font-size: 35px;
   font-weight: bolder;
+  color: lightgreen;
 }
 
 .date {
@@ -85,4 +128,8 @@ h1 {
   align-items: center;
   /* font-weight: regular; */
   font-size: 20px;
+}
+
+.secondDiv {
+  border-top: 1px solid lightblue;
 }
