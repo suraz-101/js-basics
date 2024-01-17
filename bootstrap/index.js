@@ -1,26 +1,23 @@
-const message = () => {
-  const name = document.querySelector("#name").value;
-  const password = document.querySelector("#password").value;
-  const college = document.querySelector("#select").value;
-  const email = document.querySelector("#email").value;
+// const message = () => {
+//   const name = document.querySelector("#name").value;
+//   const password = document.querySelector("#password").value;
+//   const college = document.querySelector("#select").value;
+//   const email = document.querySelector("#email").value;
 
-  document.getElementById("result").innerHTML =
-    "Name :" +
-    name +
-    "<br>" +
-    "Password:" +
-    password +
-    "<br>" +
-    "College" +
-    college +
-    "<br>" +
-    "email" +
-    email;
+//   document.getElementById("result").innerHTML =
+//     "Name :" +
+//     name +
+//     "<br>" +
+//     "Password:" +
+//     password +
+//     "<br>" +
+//     "College" +
+//     college +
+//     "<br>" +
+//     "email" +
+//     email;
+// };
 
-  //   console.log(name);
-  //   console.log(password);
-  //   document.getElementById("result").innerHTML = password;
-};
 const time = () => {
   const date = new Date();
   const hour = date.getHours();
@@ -42,25 +39,9 @@ const time = () => {
   document.getElementById("date").innerHTML = year;
   document.getElementById("month").innerHTML = calculateMonth(mon) + "-" + dat;
   document.getElementById("day").innerHTML = calculateDay(day);
-
-  //   document.getElementById("time").innerHTML =
-  //     dat +
-  //     " " +
-  //     calculateMonth(month) +
-  //     ", " +
-  //     calculateDay(day) +
-  //     " " +
-  //     String(hour).concat(":" + minutes + ":" + second) +
-  //     " " +
-  //     amPm;
 };
 
 setInterval(time, 1000);
-
-// const date = new Date();
-// const day = date.getDay();
-// const dat = date.getDate();
-// const month = date.getMonth();
 
 const calculateMonth = (month) => {
   switch (month) {
@@ -90,7 +71,6 @@ const calculateMonth = (month) => {
       return "Dec";
   }
 };
-// console.log(dat);
 
 const calculateDay = (day) => {
   switch (day) {
@@ -110,5 +90,3 @@ const calculateDay = (day) => {
       return "Saturday";
   }
 };
-
-// console.log(amPm);

@@ -51,19 +51,14 @@ h1 {
   background-color: black;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 50px 15px #48abe0;
+  box-shadow: 0 0 100px 10px #48abe0;
 
   /* margin: auto; */
 }
 
 .outerDiv::before {
   content: "";
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    blue,
-    rgba(255, 0, 0, 0)
-  );
+  /* background-image: linear-gradient(to right, black, #48abe0, black); */
   height: 600px;
   width: 200px;
   position: absolute;
