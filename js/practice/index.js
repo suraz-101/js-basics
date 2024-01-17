@@ -123,7 +123,7 @@ const userRole = ["admin", "vendor"];
 const allowRole = ["inventoryManager", "vendor"];
 // console.log(allowRole[1]);
 const res = (userRole, allowRole) => {
-  userRole.some((role) => allowRole.includes(role));
+  return userRole.some((role) => allowRole.includes(role));
 };
 
 const result = res(userRole, allowRole);
