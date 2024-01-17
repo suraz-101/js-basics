@@ -128,3 +128,8 @@ const res = (userRole, allowRole) => {
 
 const result = res(userRole, allowRole);
 console.log(result);
+
+// Write a js function to that check username and pasword
+//use bootstrap for login page design
+//set username and password as your email
+// Result alert you have logged in
