@@ -21,6 +21,7 @@
   /* display: flex; */
   overflow: hidden;
   float: left;
+  background-image: url("");
   /* flex-shrink: 0; */
   /* flex-wrap: wrap; */
 }
