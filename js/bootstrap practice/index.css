@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content-section {
+  height: 100vh;
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+ul {
+  text-decoration: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
