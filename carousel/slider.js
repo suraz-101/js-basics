@@ -1,9 +1,11 @@
 // const { BufferGeometryLoader } = require("three");
 
 const image = [
-  "https://images.assetsdelivery.com/compings_v2/ongkachakon/ongkachakon2011/ongkachakon201100026.jpg",
-  "https://www.newzealand.com/assets/Tourism-NZ/Wellington/bcab3eae5b/img-1536146521-3287-14997-p-2BB80D14-E659-C48E-BB5EC5B2906B7758-2544003__aWxvdmVrZWxseQo_FocalPointCropWzM1MiwxMDI0LDUwLDUwLDc1LCJwbmciLDY1LDIuNV0.png",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRenLnADWbObaYRGhPEW_3PINNJrCVM1_Z-0myxnoRE6flxurMmscysbrRYR21yActE_4U&usqp=CAU",
+  "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXVja2xhbmR8ZW58MHx8MHx8fDA%3D",
+  "https://image1.masterfile.com/getImage/ODYyLTAzMzYwMDc2ZW4uMDAwMDAwMDA=AL3tBP/862-03360076en_Masterfile.jpg",
+  "https://www.skicooper.com/coopwp/wp-content/uploads/2018/11/Slider-Scenery-2.jpg",
+  "https://img.veenaworld.com/wp-content/uploads/2022/08/Top-11-Places-to-Visit-in-Pokhara.jpg",
+  "https://static2.tripoto.com/media/filter/tst/img/2005586/TripDocument/1606627841_1024px_lake_wakatipu_remarkable_mountains.jpg",
 ];
 
 // let div = document.getElementById("carousel-item");
