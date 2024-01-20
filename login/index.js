@@ -29,18 +29,76 @@ button.addEventListener("click", () => {
   document.getElementById("password").value = "";
 });
 
-// const checkValid = (userName, passWord) => {
-//   if (userName === "suraj123" && passWord === "suraj12") {
-//     alert("You are successfully logged in !!");
-//   } else {
-//     alert("Please enter valid username and password");
-//   }
-// };
+//checking validation onkeyup
+const validation = () => {
+  const error = document.getElementById("error");
+  const password = document.getElementById("password").value;
+  const char = document.getElementById("char");
+  const capital = document.getElementById("capital");
+  const number = document.getElementById("number");
+  const specialChar = document.getElementById("specialChar");
+  const check = document.getElementById("check1");
+  const close = document.getElementById("close");
+  error.style.display = "block";
+  const lengthOfPassword = () => {
+    console.log(password);
+    const length = password.length;
+    console.log(length);
+    if (length > 9) {
+      char.style.color = "green";
+      check.style.display = "block";
+      close.style.display = "none";
+    } else {
+      char.style.color = "red";
+      check.style.display = "none";
+      close.style.display = "block";
+    }
+  };
 
-// button.addEventListener("click", () => {
-//   const userName = document.getElementById("username").value;
-//   const passWord = document.getElementById("password").value;
-//   checkValid(userName, passWord);
-//   document.getElementById("username").value = "";
-//   document.getElementById("password").value = "";
-// });
+  const capitalLetter = () => {
+    if (password.search(/[A-Z]/) == -1) {
+      capital.style.color = "red";
+    } else {
+      capital.style.color = "green";
+    }
+  };
+
+  const checkNumber = () => {
+    if (password.search(/[0-9]/) == -1) {
+      number.style.color = "red";
+    } else {
+      number.style.color = "green";
+    }
+  };
+
+  const checkSpecial = () => {
+    if (password.search(/[`~!@#$%^&*(_+-={[\]|:;"'<,>.?/})]/) == -1) {
+      specialChar.style.color = "red";
+    } else {
+      specialChar.style.color = "green";
+    }
+  };
+
+  lengthOfPassword();
+  capitalLetter();
+
+  checkNumber();
+  checkSpecial();
+
+  const charColor = char.style.color;
+  const capitalColor = capital.style.color;
+  const numberColor = number.style.color;
+  const specialColor = specialChar.style.color;
+
+  if (
+    charColor == "green" &&
+    capitalColor == "green" &&
+    numberColor == "green" &&
+    specialColor == "green"
+  ) {
+    error.style.display = "none";
+    // error.style.transition = "all 1s ease-in-out";
+  }
+
+  // console.log(color);
+};

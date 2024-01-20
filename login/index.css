@@ -79,3 +79,57 @@ button {
 button:hover {
   box-shadow: 0px 0px 30px 15px rgba(5, 126, 255, 0.8);
 }
+.password {
+  position: relative;
+  /* border: 1px solid white; */
+}
+#error {
+  background-color: black;
+  /* height: 150px; */
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 0px 10px 2px gray;
+  /* border: 1px solid white; */
+  z-index: 2;
+  padding: 10px;
+  display: none;
+  /* transition: 2s ease-in-out; */
+}
+
+#error::after {
+  content: "";
+  /* border: 1px solid white; */
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background-color: black;
+  transform: rotate(45deg);
+  /* border-left: 1px solid white; */
+  /* border-top: 1px solid white; */
+  box-shadow: -5px -5px 10px 0px gray;
+
+  /* z-index: -1; */
+  /* left: -20px; */
+}
+
+#error p {
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+}
+
+.fa-close {
+  color: darkred;
+  font-size: 10px;
+  margin-right: 10px;
+  /* display: block; */
+  /* height: 10px; */
+}
+.fa-check {
+  color: green;
+  font-size: 10px;
+  margin-right: 10px;
+  display: none;
+}
