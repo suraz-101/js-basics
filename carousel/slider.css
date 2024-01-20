@@ -10,20 +10,22 @@
   /* border: 1px solid black; */
 }
 
-.carousel-items {
+#carousel-items {
   height: 40%;
   width: 60%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 10px 2px gray;
+  box-shadow: 0px 0px 100px 2px gray;
   /* display: flex; */
   overflow: hidden;
   float: left;
   background-image: url("");
-  /* flex-shrink: 0; */
-  /* flex-wrap: wrap; */
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .carousel-item {
