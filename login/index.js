@@ -2,8 +2,8 @@ const button = document.getElementById("button");
 
 // declaring the arrow function to check if the username and password match with the data stored in users array
 const checkValid = (userName, passWord) => {
-  const users = [
-    { name: "suraj", username: "surajpandey", password: "suraj123" },
+  let users = [
+    { name: "suraj", username: "surajpandey", password: "suraj123A@" },
     { name: "nabin", username: "nabin", password: "nabin123" },
     { name: "sandesh", username: "sandesh1", password: "sandesh123" },
   ];
@@ -24,10 +24,13 @@ const checkValid = (userName, passWord) => {
 button.addEventListener("click", () => {
   const userName = document.getElementById("username").value; //extracting input value
   const passWord = document.getElementById("password").value; //extracting input value
+
   checkValid(userName, passWord); // calling checkValid function by passing the parameters that stores input value
   document.getElementById("username").value = "";
   document.getElementById("password").value = "";
 });
+
+// button.addEventListener("click")
 
 //checking validation onkeyup
 const validation = () => {
@@ -37,53 +40,68 @@ const validation = () => {
   const capital = document.getElementById("capital");
   const number = document.getElementById("number");
   const specialChar = document.getElementById("specialChar");
-  const check = document.getElementById("check1");
-  const close = document.getElementById("close");
+  // all the elements of fa-check and fa-close are stored in check5 and close5 array respectively
+  const check5 = document.getElementsByClassName("fa-check");
+  const close5 = document.getElementsByClassName("fa-close");
+
+  // function that show the check  elements and hide close element
+  const toHideCloseShowCheck = (j) => {
+    check5[j].style.display = "block";
+    close5[j].style.display = "none";
+    // }
+  };
+  // function that hide the check  elements and show close element
+  const toHideCheckShowClose = (j) => {
+    check5[j].style.display = "none";
+    close5[j].style.display = "block";
+  };
   error.style.display = "block";
-  const lengthOfPassword = () => {
-    console.log(password);
+  const lengthOfPasswordValidation = () => {
     const length = password.length;
-    console.log(length);
     if (length > 9) {
       char.style.color = "green";
-      check.style.display = "block";
-      close.style.display = "none";
+      toHideCloseShowCheck(0);
     } else {
       char.style.color = "red";
-      check.style.display = "none";
-      close.style.display = "block";
+      toHideCheckShowClose(0);
     }
   };
 
-  const capitalLetter = () => {
+  const capitalLetterValidation = () => {
     if (password.search(/[A-Z]/) == -1) {
       capital.style.color = "red";
+      toHideCheckShowClose(1);
     } else {
       capital.style.color = "green";
+      toHideCloseShowCheck(1);
     }
   };
 
-  const checkNumber = () => {
+  const checkNumberValidation = () => {
     if (password.search(/[0-9]/) == -1) {
       number.style.color = "red";
+      toHideCheckShowClose(2);
     } else {
       number.style.color = "green";
+      toHideCloseShowCheck(2);
     }
   };
 
-  const checkSpecial = () => {
+  const checkSpecialValidation = () => {
     if (password.search(/[`~!@#$%^&*(_+-={[\]|:;"'<,>.?/})]/) == -1) {
       specialChar.style.color = "red";
+      toHideCheckShowClose(3);
     } else {
       specialChar.style.color = "green";
+      toHideCloseShowCheck(3);
     }
   };
 
-  lengthOfPassword();
-  capitalLetter();
+  lengthOfPasswordValidation();
+  capitalLetterValidation();
 
-  checkNumber();
-  checkSpecial();
+  checkNumberValidation();
+  checkSpecialValidation();
 
   const charColor = char.style.color;
   const capitalColor = capital.style.color;
@@ -97,8 +115,5 @@ const validation = () => {
     specialColor == "green"
   ) {
     error.style.display = "none";
-    // error.style.transition = "all 1s ease-in-out";
   }
-
-  // console.log(color);
 };

@@ -15,7 +15,26 @@
   /* height: 500px;
   width: 400px; */
   /* background-color: transparent; */
-  box-shadow: 0px 0px 150px 33px rgba(72, 135, 202, 0.8);
+  /* box-shadow: 0px 0px 150px 33px rgba(72, 135, 202, 0.8); */
+  animation: glow 10s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 150px 33px rgba(72, 135, 202, 0.8);
+  }
+  25% {
+    box-shadow: 0px 0px 150px 33px rgba(89, 72, 202, 0.8);
+  }
+  50% {
+    box-shadow: 0px 0px 150px 33px rgba(72, 202, 111, 0.8);
+  }
+  75% {
+    box-shadow: 0px 0px 150px 33px rgba(202, 128, 72, 0.8);
+  }
+  100% {
+    box-shadow: 0px 0px 150px 33px rgba(202, 72, 193, 0.8);
+  }
 }
 
 .title h3 {
@@ -128,7 +147,7 @@ button:hover {
   /* height: 10px; */
 }
 .fa-check {
-  color: green;
+  color: darkgreen;
   font-size: 10px;
   margin-right: 10px;
   display: none;
